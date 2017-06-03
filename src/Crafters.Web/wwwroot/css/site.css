@@ -28,11 +28,16 @@ textarea {
 {
     width: 100%;
 }
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none
-  }
+.product { 
+    border: 1px solid #D3D3D3;   
+    margin: 20px;
+} 
+.product:hover { 
+  outline: 2px solid #D3D3D3; 
+} 
+.product-name h2.small-text {
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 1.1;
 }
+/*Menu*/
