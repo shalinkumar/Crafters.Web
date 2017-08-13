@@ -2,43 +2,37 @@
     Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
 
-<section class="main-content">
-    <div class="row">
-        <div class="span12">
-            <div class="row">
-                <!-- LOGIN FORM -->
-                <div class="text-center" style="padding:50px 0">
-                    <div class="logo">login</div>
-                    <!-- Main Form -->
-                    <div class="login-form-1">
-                        <form id="login-form" class="text-left">
-                            <div class="login-form-main-message"></div>
-                            <div class="main-login-form">
-                                <div class="login-group">
-                                    <div class="form-group">
-                                        <label for="lg_username" class="sr-only">Username</label>
-                                        <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lg_password" class="sr-only">Password</label>
-                                        <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
-                                    </div>
-                                    <div class="form-group login-group-checkbox">
-                                        <input type="checkbox" id="lg_remember" name="lg_remember">
-                                        <label for="lg_remember">remember</label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
-                            </div>
-                            <div class="etc-login-form">
-                                <p>forgot your password? <a href="#">click here</a></p>
-                                <p>new user? <a href="#">create new account</a></p>
-                            </div>
-                        </form>
+<div class="container">
+    <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+        <div class="row">
+            <div class="iconmelon">                                            
+                <img src="~/themes/images/m4.png" />
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title text-center">Crafters Galaxy</div>
+            </div>
+            <div class="panel-body">
+                <form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST" action="<%: Url.Action("Login","Account") %>">
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="user" type="text" class="form-control" name="user" value="" placeholder="User">
                     </div>
-                    <!-- end:Main Form -->
-                </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Log in</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</section>
+</div>
+<div id="particles"></div>

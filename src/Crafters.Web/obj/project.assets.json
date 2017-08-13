@@ -9465,15 +9465,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SHALIN\\.nuget\\packages\\": {}
+    "C:\\Users\\shalin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Git\\Handicrafts\\Crafters.Web\\src\\Crafters.Web\\Crafters.Web.csproj",
+      "projectUniqueName": "D:\\github\\Crafters.Web\\src\\Crafters.Web\\Crafters.Web.csproj",
       "projectName": "Crafters.Web",
-      "projectPath": "F:\\Git\\Handicrafts\\Crafters.Web\\src\\Crafters.Web\\Crafters.Web.csproj",
-      "outputPath": "F:\\Git\\Handicrafts\\Crafters.Web\\src\\Crafters.Web\\obj\\",
+      "projectPath": "D:\\github\\Crafters.Web\\src\\Crafters.Web\\Crafters.Web.csproj",
+      "outputPath": "D:\\github\\Crafters.Web\\src\\Crafters.Web\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"

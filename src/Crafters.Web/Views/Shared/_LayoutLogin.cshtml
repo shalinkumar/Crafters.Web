@@ -6,35 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Crafters</title>
 
-    <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-
-        <!-- bootstrap -->
-        <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/bootstrap/css/bootstrap-responsive.min.css" asp-append-version="true" rel="stylesheet" />
+    <environment names="Development">          
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
        
+
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+   
         <!---Pagewise styles-->
         <link href="~/css/login.css" rel="stylesheet" asp-append-version="true" />
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-              
+        <!---Pagewise scripts-->
+        <script src="~/js/login.js"></script>
+        
     </environment>
     <environment names="Staging,Production">
        
     </environment>  
 </head>
 <body>    
-    <div class="container body-content">
-        @RenderBody()                
-    </div>
-
-    <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>       
-    </environment>
-    <environment names="Staging,Production">      
-    </environment>
+    @RenderBody()       
 </body>
 </html>
